@@ -1,4 +1,4 @@
 export {AppContainer} from "./AppContainer";
 export {PageContainer} from "./PageContainer";
-export {Navbar} from "./Navbar";
+export {Header} from "./Header";
 export {Hero} from "./Hero";

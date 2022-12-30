@@ -1,6 +1,6 @@
 import React from "react";
-
-export const Navbar = () => {
+import { Header as MantineHeader, Menu, Group, Center, Burger, Container } from "@mantine/core";
+export const Header = () => {
     return (
         <div className="navbar">
             <ul>
