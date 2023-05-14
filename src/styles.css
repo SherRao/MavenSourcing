@@ -5,19 +5,30 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: white;
-  background-color: #242424;
+  color: var(--white);
+  background-color: var(--black);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --white: #FFFFFF;
+  --blue: #3D3F54;
+  --black: #181818;
+  --gray: #414141;
+  --dark_blue: #242535;
+  --light_gray: #969696;
+}
+
+* {
+  padding: 0;
+  margin: 0;
 }
 
 body {
-  color: black;
-
+  color: var(--black);
 }
 
 .app-container {
@@ -25,7 +36,9 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   width: 100vw;
+  max-width: 100%;
   height: 100%;
 }
 
@@ -49,13 +62,31 @@ body {
   background-color: #242424;
   color: rgba(255, 255, 255, 0.87);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.24);
+
+  background-color: var(--black)
 }
 
-.hero {
+.hero-container {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.hero-container video {
   width: 100%;
   height: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: -1;
+
+  filter: brightness(50%);
+}
+
+.about-container {
+  background-color: var(--blue);
 }

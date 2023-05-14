@@ -1,3 +1,4 @@
+/* eslint-disable */
 module.exports = {
     "env": {
         "browser": true,
@@ -32,6 +33,10 @@ module.exports = {
         ],
         "semi": [
             "error",
+            "always"
+        ],
+        "no-unused-vars": [
+            "warn",
             "always"
         ]
     }

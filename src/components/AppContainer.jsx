@@ -9,4 +9,6 @@ export const AppContainer = ({children}) => {
     );
 };
 
-AppContainer.propTypes = { children: PropTypes.node };
+AppContainer.propTypes = {
+    children: PropTypes.node
+};
