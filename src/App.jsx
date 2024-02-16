@@ -14,7 +14,6 @@ const App = () => {
                 <Space h="5rem" />
                 <AboutSection />
                 <Space h="5rem" />
-
             </div>
             // {/* </Center> */}
         // </AppShell>
